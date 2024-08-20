@@ -1,0 +1,40 @@
+.cart-expand {
+  /* @apply absolute  top-full h-[calc(100vh-2.5rem)] w-[50vw] bg-stone-800 transition-all; */
+  @apply absolute max-sm:h-[100vh] max-sm:w-[100%] max-sm:top-[100%] max-sm:left-0 top-full h-[calc(100vh-2.5rem)] w-[50vw] bg-stone-800 transition-all;
+}
+
+.MuiTable-root {
+  @apply bg-stone-800 text-white
+}
+
+
+.MuiToolbar-root {
+  justify-content: center !important;
+}
+
+
+
+.MuiTablePagination-selectLabel, .MuiTablePagination-displayedRows,.MuiTablePagination-spacer, .MuiTablePagination-select, .MuiSelect-icon {
+  display: none !important;
+}
+
+table * {
+  color: white !important;
+  cursor: auto;
+}
+
+table tr {
+  max-height: 100px !important;
+}
+
+.MuiTablePagination-root {
+  width: 100% !important;
+}
+
+.clear-all {
+  text-align: end;
+}
+
+.MuiBox-root {
+  cursor: pointer !important;
+}

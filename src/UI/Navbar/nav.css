@@ -1,0 +1,14 @@
+
+
+.expand-nav {
+    @apply max-sm:absolute max-sm:h-[calc(100vh-2.5rem)] max-sm:top-[100%] max-sm:left-[-100%] transition-all max-sm:w-full max-sm:bg-stone-800
+}
+
+.navbar {
+    @apply bg-stone-800 fixed w-full top-0 py-2 z-50 text-white h-10
+}
+
+.MuiButtonBase-root {
+    padding: 0 !important;
+    color: white !important;
+}

@@ -1,0 +1,5 @@
+
+
+.btn button {
+    @apply rounded-md p-1 mr-2 bg-stone-700 text-white transition-all hover:bg-stone-600
+}

@@ -1,17 +1,21 @@
-import Loading from '../UI/Loading/Loading';
-import Products from '../UI/Products/Products'
-import useProducts from '../utils/useProducts';
+import Loading from "../UI/Loading/Loading";
+import useProducts from "../utils/useProducts";
+import Search from "./Search";
 
 const ProductsComponent = () => {
-
   const products = useProducts();
-
 
   return (
     <>
-    {products ? <Products products={products}/> : <Loading/>}
+      {products ? (
+        <>
+          <Search data={products} />
+        </>
+      ) : (
+        <Loading />
+      )}
     </>
-  )
-}
+  );
+};
 
-export default ProductsComponent
+export default ProductsComponent;

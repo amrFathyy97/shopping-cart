@@ -7,6 +7,7 @@ import { createContext, useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import { CartContextType } from "./types/CartContext.type";
 import ProductsComponent from "./Components/Products";
+import Home from "./Components/Home";
 
 export const CartContext = createContext<CartContextType | null>(null);
 
@@ -29,11 +30,9 @@ const App = () => {
       <Navbar />
       <Up />
         <Routes>
-          <Route path="/" element={<h1 className="my-10">Home Page...</h1>} />
-
           <Route path="/products" element={<ProductsComponent />} />
           <Route path="/products/:id" element={<Product />} />
-
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<h1 className="my-10">Not Found</h1>} />
         </Routes>
       </CartContext.Provider>

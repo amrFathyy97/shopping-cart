@@ -2,7 +2,7 @@ import { IProduct } from "../../types/Product.type";
 import "./products.css";
 import ProductsBtn from "./ProductsBtn";
 
-const Products = ({products}: {products: IProduct[]}) => {
+const RenderProducts = ({products}: {products: IProduct[]}) => {
 
   const elements =
     products &&
@@ -23,10 +23,10 @@ const Products = ({products}: {products: IProduct[]}) => {
     ));
 
   return (
-    <div className="my-10 container mx-auto grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      {  elements}
+    <div className="mx-auto grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      { elements}
     </div>
   );
 };
 
-export default Products;
+export default RenderProducts;

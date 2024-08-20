@@ -13,7 +13,7 @@ export default function useProducts() {
         const data = await response.json();
         setProducts(data);
       } catch (err) {
-        console.log(err);
+        setProducts(null)
       }
     };
 

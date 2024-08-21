@@ -27,7 +27,7 @@ export default function Cart({ items }: { items: number }) {
     <CartTable isOpen={isOpen}/>
       <IconButton onClick={handleCart} aria-label="cart">
         <StyledBadge badgeContent={items} color="secondary">
-          <ShoppingCartIcon />
+          <ShoppingCartIcon className="cart-svg" />
         </StyledBadge>
       </IconButton>
     </>

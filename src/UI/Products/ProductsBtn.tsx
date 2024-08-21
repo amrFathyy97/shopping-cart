@@ -13,7 +13,7 @@ const ProductsBtn = ({product}: {product: IProduct}) => {
 
   const {cart, setCart} = cartContext
 
-  const [quantity, setQuantity] = useState<number>(1)
+  const [quantity] = useState<number>(1)
   
     const navigate = useNavigate()
 
@@ -32,7 +32,7 @@ const ProductsBtn = ({product}: {product: IProduct}) => {
       onClick={() => {
         toast('🛒 Added to cart!', {
           position: "top-right",
-          autoClose: 1000,
+          autoClose: 200,
           hideProgressBar: true,
             closeOnClick: false,
             pauseOnHover: true,
@@ -46,7 +46,7 @@ const ProductsBtn = ({product}: {product: IProduct}) => {
             setCart((prev: IProduct[]) => [...prev, {...product, quantity}])
           }else {
             const newCart = cart.map((cart) => {
-              if(cart.id === product.id) {
+              if(cart.quantity && cart.id === product.id) {
                 cart.quantity++
               }
               return cart

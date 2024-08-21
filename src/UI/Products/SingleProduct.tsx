@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import useProducts from "../../utils/useProducts";
 import Loading from "../Loading/Loading";
 
-const Product = () => {
+const SingleProduct = () => {
     const params = useParams();
     const products = useProducts();
 
@@ -10,7 +10,7 @@ const Product = () => {
     
 
   return (
-    <div className="my-10">
+    <div className="my-16 container mx-auto">
         {product ? <>
             <h1>{product.title}</h1>
             <h2>{product.price}</h2>
@@ -19,4 +19,4 @@ const Product = () => {
   )
 }
 
-export default Product
+export default SingleProduct

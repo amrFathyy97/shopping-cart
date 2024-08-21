@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import Product from "./UI/Products/Product";
+import Product from "./UI/Products/SingleProduct";
 import Up from "./UI/up/Up";
 import "react-toastify/dist/ReactToastify.css";
 import { createContext, useEffect, useState } from "react";
